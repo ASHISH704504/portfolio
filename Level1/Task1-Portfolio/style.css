@@ -14,7 +14,7 @@ body {
 .main-container {
     display: grid;
     max-width: 1200px;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns:350px 1fr;
     padding-top: 40px;
     gap: 50px;
     margin: auto;
@@ -26,7 +26,7 @@ body {
     border: 1px solid #3a3a3a;
     border-radius: 16px;
     padding: 40px;
-    position: sticky;
+    position:sticky;
     top: 40px;
 }
 
@@ -36,9 +36,11 @@ body {
     background-color: #2a2a2a;
     border: 1px solid #3a3a3a;
     border-radius: 16px;
+    padding: 40px;
+    
 
 }
-
+/*profile section in sidebar*/
 .profile {
     text-align: center;
 }
@@ -68,11 +70,13 @@ body {
     margin-top: 10px;
 }
 
+/* contact information in sidebar*/
 .contact{
     
     margin-top: 30px;
     border-top: 2px solid #3a3a3a;
     padding-top: 20px;
+    
 }
 
  .label{
@@ -84,7 +88,15 @@ body {
 .value{
     color: #e0e0e0;
     text-decoration: none;
+    
 }
+
+.email,.phone
+{
+    margin-bottom:15px ;
+
+}
+
 
 .social
 {
@@ -100,4 +112,45 @@ body {
     margin-left: 5px;
     filter: grayscale(1) invert(0.7);
     transition: filter 0.3s ease;
+}
+
+.social img:hover
+{
+    filter : grayscale(0) invert(0);
+}
+
+/* navgation section*/
+
+#navbar1 {
+    
+   margin-bottom: 20px;
+   border-bottom: 2px solid #3a3a3a;
+   padding-bottom: 20px;
+}
+
+.first_nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+
+.first_nav a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #a0a0a0;
+    transition: color 0.3s ease;
+   
+}
+
+.active , .first_nav a:hover
+{
+color: #FFBF00;
+}
+
+
+/* about section*/
+
+#about h1{
+    color: #e0e0e0;
 }
