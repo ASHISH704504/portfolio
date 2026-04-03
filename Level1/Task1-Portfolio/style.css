@@ -14,7 +14,7 @@ body {
 .main-container {
     display: grid;
     max-width: 1200px;
-    grid-template-columns:350px 1fr;
+    grid-template-columns: 350px 1fr;
     padding-top: 40px;
     gap: 50px;
     margin: auto;
@@ -26,20 +26,21 @@ body {
     border: 1px solid #3a3a3a;
     border-radius: 16px;
     padding: 40px;
-    position:sticky;
+    position: sticky;
     top: 40px;
 }
 
 .main-content {
 
-    height: 90vh;
+  
     background-color: #2a2a2a;
     border: 1px solid #3a3a3a;
     border-radius: 16px;
     padding: 40px;
-    
+
 
 }
+
 /*profile section in sidebar*/
 .profile {
     text-align: center;
@@ -71,42 +72,41 @@ body {
 }
 
 /* contact information in sidebar*/
-.contact{
-    
+.contact {
+
     margin-top: 30px;
     border-top: 2px solid #3a3a3a;
     padding-top: 20px;
-    
+
 }
 
- .label{
+.label {
     font-weight: 500;
     font-size: 0.8rem;
     color: #a0a0a0;
 }
 
-.value{
+.value {
     color: #e0e0e0;
     text-decoration: none;
-    
-}
-
-.email,.phone
-{
-    margin-bottom:15px ;
 
 }
 
+.email,
+.phone {
+    margin-bottom: 15px;
 
-.social
-{
+}
+
+
+.social {
     margin-top: 30px;
     border-top: 2px solid #3a3a3a;
     padding-top: 20px;
     text-align: center;
 }
 
-.social img{
+.social img {
     height: 24px;
     width: 24px;
     margin-left: 5px;
@@ -114,43 +114,114 @@ body {
     transition: filter 0.3s ease;
 }
 
-.social img:hover
-{
-    filter : grayscale(0) invert(0);
+.social img:hover {
+    filter: grayscale(0) invert(0);
 }
 
 /* navgation section*/
 
 #navbar1 {
-    
-   margin-bottom: 20px;
-   border-bottom: 2px solid #3a3a3a;
-   padding-bottom: 20px;
+
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3a3a3a;
+    padding-bottom: 20px;
 }
 
-.first_nav{
+.first_nav {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    
+
 }
 
-.first_nav a{
+.first_nav a {
     font-weight: 500;
     text-decoration: none;
     color: #a0a0a0;
     transition: color 0.3s ease;
-   
+
 }
 
-.active , .first_nav a:hover
-{
-color: #FFBF00;
+
+.active, .first_nav a:hover{
+    color: #FFBF00;
 }
 
+/*common*/
+
+.heading {
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    ;
+}
+
+
+.line {
+    background-color: #FFBF00;
+    height: 5px;
+    width: 60px;
+    margin-bottom: 20px;
+
+}
 
 /* about section*/
 
-#about h1{
-    color: #e0e0e0;
+
+#about {
+    margin-bottom: 40px;
 }
+
+
+
+
+.content {
+    text-align: justify;
+    /* paragraph aligning*/
+    /*margin-bottom: 20px;*/
+}
+
+/* skill section*/
+
+#skills{
+    margin-bottom: 40px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+    gap: 30px;
+}
+
+
+.item
+{
+    
+    padding:20px;
+    border-radius: 20px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item:hover
+{
+transform: scale(1.1);
+box-shadow 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+.item img {
+    height: 48px;
+    width: 48px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    font-size:1rem;
+    font-weight: 500;
+
+
+
+}
+
