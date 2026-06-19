@@ -29,8 +29,6 @@ Clean and organized code practices
 
 This portfolio represents my journey as an aspiring Frontend Developer. It serves as a platform to showcase my skills, projects, and continuous learning in web development.
 
-📷 Preview
-
 🔗 Live Demo:
 https://ashish704504.github.io/portfolio/
 
